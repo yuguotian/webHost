@@ -1,0 +1,147 @@
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: forestgreen;
+}
+
+.active {
+	background-color: limegreen;
+}
+
+#overlay {
+	position: fixed; 
+	display: none; 
+	width: 100%; 
+	height: 100%; 
+	z-index: 3;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.2); 
+}
+
+#image_layer, #video_layer {
+	position: fixed; 
+	display: none; 
+	width: 100%; 
+	height: 100%; 
+	z-index: 5;
+	cursor: pointer;
+}
+
+#navigation {
+	padding-bottom: 10px;
+}
+
+input[type="text"], textarea {
+	background-color: aliceblue;
+}
+
+input[type=text]:focus {
+	background-color: lightskyblue;
+}
+
+
+#fname, #lname {
+	display: block;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#topButton {
+	display: none; 
+	position: fixed; 
+	bottom: 20px; 
+	right: 20px; 
+	z-index: 10; 
+	border: none; 
+	outline: none; 
+	background-color: aliceblue; 
+	color: black;
+	cursor: pointer; 
+	padding: 15px; 
+	font-size: 16px; 
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.center2 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+.flex_container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	margin: auto;
+}
+
+.column {
+	cursor: pointer;
+	position: relative;
+	width: 250px;
+	margin: 30px;
+	height: auto;
+	display: block;
+	align-content: center;
+}
+
+.video_column {
+	cursor: pointer;
+	position: relative;
+	margin: 20px;
+	height: auto;
+	display: block;
+	align-content: center;
+}
+
+.home_container {
+	display: flex;
+	flex-wrap: nowrap;
+	margin: auto;
+}
+
+.home_column {
+	position: relative;
+	width: 400px;
+	height: 300px;
+	display: block;
+}
+
+.home_column2 {
+	position: relative;
+	height: auto;
+	display: block;
+	flex-shrink: 3;
+}
